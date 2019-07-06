@@ -291,7 +291,7 @@ textarea {
     height:100%;
     background-image: url(../img/fireesc-steps.png);
     background-size: contain!important;
-    transform:rotateY(90deg) translateZ(-1vw) translateX(1vw);
+    transform:rotateY(90deg) translate3d(0vw,2vw,-1vw);
     transform-origin: 100% 0;
   }
 @keyframes rain{
@@ -350,6 +350,112 @@ textarea {
     background-position: center;
     transform:rotateX(90deg) rotateY(31deg) rotateZ(90deg) translateZ(1.5vw) translateY(-1.2vw);
   }
+
+  .vines {
+    width:10vw;
+    height:10vw;
+    transform: translate3d(-3vw,1vw,6vw);
+  }
+
+  .vine-layer-1 {
+    background-image: url(../img/vine-1.png);
+    width:100%;
+    height:200%;
+    transform: rotateY(-180deg) translate3d(-1vw, -1vw, -1vw)
+  }
+
+  .vine-layer-2 {
+    background-image: url(../img/vine-2.png);
+    width:100%;
+    height:200%;
+    transform: rotateY(-90deg) translate3d(-1vw, -1vw, 1vw);
+  }
+
+  .vine-layer-3 {
+    background-image: url(../img/vine-3.png);
+    width:100%;
+    height:100%;
+    transform: rotateX(-90deg) translate3d(0vw, 1vw, -5vw);
+  }
+
+  .clothesline {
+    background-image: url(../img/line.png);
+    width:30vw;
+    height:5vw;
+    transform: translateZ(8.5vw) translateX(5vw);
+    background-size: contain!important;
+  }
+
+  @keyframes blowingclothes{
+  0% {
+    transform:skewX(-10deg) rotateX(10deg);
+  }
+  25% {
+    transform:skewX(0deg);
+  }
+  50% {
+    transform:skewX(-10deg) rotateX(30deg);
+  }
+  75% {
+    transform:skewX(-5deg);
+  }
+  75% {
+    transform:skewX(-10deg) rotateX(10deg);
+  }
+}
+
+  .clothes {
+    background-image: url(../img/cloth_03.png);
+    background-size: contain!important;
+    width:30%;
+    height:3vw;
+    animation: blowingclothes 4s infinite alternate;
+    transform-origin: 0% 0%;
+  }
+
+  .clothes-1 {
+    background-image: url(../img/cloth_06.png);
+    width:30%;
+    height:3vw;
+    animation-delay: -100ms;
+    left:0%;
+    top:30%;
+  }
+
+
+  .clothes-2 {
+    background-image: url(../img/cloth_03.png);
+    width:30%;
+    height:3vw;
+    animation-delay: -200ms;
+    left:15%;
+  }
+
+  .clothes-3 {
+    background-image: url(../img/cloth_09.png);
+    width:30%;
+    height:3vw;
+    animation-delay: -100ms;
+    left:30%;
+  }
+
+  .clothes-4 {
+    background-image: url(../img/cloth_20.png);
+    width:50%;
+    height:9vw;
+    left:35%;
+    top:65%;
+  }
+
+  .clothes-5 {
+    background-image: url(../img/cloth_17.png);
+    width:30%;
+    height:3vw;
+    animation-delay: -300ms;
+    left:75%;
+    top:35%;
+  }
+
 
 
 /* ==========================================================================
