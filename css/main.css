@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  
+
 
    body,html {
     width:100%;
@@ -111,13 +111,16 @@ textarea {
     background:#abb5ae;
    }
 
-   body {
+   .wrapper {
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+    perspective:5000px;
+    width:100vw;
+    height:100vh;
    }
 
 .title {
@@ -125,15 +128,15 @@ textarea {
     top:50%;
     left:66%;
     Color:#fff;
-    
+
     width: 30%;
     font-family: 'Work Sans', sans-serif;
     transform: translateX(-50%) translateY(-50%);
-    
+
    }
 
    .title h1 {
-    
+
     font-weight: normal;
     line-height: 1;
     font-size: 5vw;
@@ -193,6 +196,7 @@ textarea {
     left:0;
     background:white;
     animation: lightning 5s infinite;
+    pointer-events: none;
    }
 
    .apartment {
@@ -513,4 +517,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
