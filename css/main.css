@@ -345,7 +345,7 @@ textarea {
     transform: translateZ(10vw);
     width:100vw;
     height:100vw;
-    animation:rain 15s infinite linear;
+    animation:rain 7s infinite linear;
     background-repeat: repeat!important;
   }
 
